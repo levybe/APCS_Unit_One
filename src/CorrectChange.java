@@ -7,8 +7,10 @@ public class CorrectChange {
         System.out.println("Please enter a whole number of cents:");
         int change, changeDollar, changeQuarter, changeDime, changeNickel, changePenny;
         change = scan.nextInt();
-        changeDollar = change % 100;
-        changeQuarter = changeDollar % 25;
+        changeDollar = change / 100;
+        changeQuarter = change % 100;
+        changeQuarter = changeQuarter / 25;
+        changeDime =
         changeDime = changeQuarter % 10;
         changeNickel = changeDime % 5;
         changePenny = changeNickel % 1;
